@@ -16,7 +16,7 @@ from sklearn.metrics import accuracy_score
 
 diabates_data = pd.read_csv('/content/diabetes.csv')
 
-# diabates_data.head()
+diabates_data.head()
 
 # diabates_data.shape
 
