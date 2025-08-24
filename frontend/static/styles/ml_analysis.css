@@ -1,0 +1,101 @@
+/* Additional styles for ML Analysis page */
+.ml-button-enhancement {
+    position: relative;
+    overflow: hidden;
+}
+
+.ml-button-enhancement::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+    transition: left 0.5s;
+}
+
+.ml-button-enhancement:hover::before {
+    left: 100%;
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 768px) {
+    .predict-button {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+    
+    .stats-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+    
+    .chart-card {
+        padding: 20px;
+    }
+}
+
+/* Loading animation for charts */
+.chart-loading {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 200px;
+    color: #666;
+}
+
+.chart-loading::after {
+    content: '';
+    width: 20px;
+    height: 20px;
+    border: 2px solid #666;
+    border-top: 2px solid transparent;
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+    margin-left: 10px;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+/* Enhanced hover effects */
+.stat-card:hover .icon {
+    transform: scale(1.1);
+    transition: transform 0.3s ease;
+}
+
+.insight-item {
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.insight-item:hover {
+    transform: translateX(5px);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Print styles for academic submission */
+@media print {
+    body {
+        background: white !important;
+        color: black !important;
+    }
+    
+    .header, .nav-button {
+        display: none;
+    }
+    
+    .container {
+        max-width: none;
+        margin: 0;
+        padding: 20px;
+    }
+    
+    .stat-card, .chart-card, .dataset-card, .model-comparison, .insights-section {
+        background: white !important;
+        box-shadow: none !important;
+        border: 1px solid #ccc;
+        page-break-inside: avoid;
+    }
+}

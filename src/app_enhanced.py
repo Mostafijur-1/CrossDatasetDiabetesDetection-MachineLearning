@@ -3,7 +3,11 @@ import joblib
 import numpy as np
 import os
 
-app = Flask(__name__)
+app = Flask(
+    __name__,
+    template_folder="../frontend/templates",
+    static_folder="../frontend/static"
+)
 
 # Load models and scalers
 def load_models():
