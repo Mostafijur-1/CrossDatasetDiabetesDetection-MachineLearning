@@ -20,7 +20,7 @@ from xgboost import XGBClassifier
 from sklearn.metrics import accuracy_score, confusion_matrix
 from sklearn.model_selection import GridSearchCV
 
-df = pd.read_csv('/content/MulticlassDiabetesDataset.csv')
+df = pd.read_csv('./datasets/MulticlassDiabetesDataset.csv')
 
 # 2. Handle Categorical Columns
 # -----------------------------

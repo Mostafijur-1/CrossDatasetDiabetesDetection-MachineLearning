@@ -1,0 +1,32 @@
+CROSS-DATASET DIABETES DETECTION RESULTS
+==================================================
+Generated on: 2025-08-30 13:57:00
+
+
+Self-Data (Same Dataset):
+------------------------------
+Lr: 0.9057
+Rf: 0.9811
+Xgb: 0.9811
+Ensemble: 0.9811
+
+Mapped Pima Dataset:
+------------------------------
+Lr: 0.4492
+Rf: 0.3008
+Xgb: 0.2279
+Ensemble: 0.2396
+
+Synthetic Dataset:
+------------------------------
+Lr: 0.5280
+Rf: 0.4520
+Xgb: 0.3840
+Ensemble: 0.3980
+
+CDC Sample Dataset:
+------------------------------
+Lr: 0.5270
+Rf: 0.5070
+Xgb: 0.5770
+Ensemble: 0.5530
