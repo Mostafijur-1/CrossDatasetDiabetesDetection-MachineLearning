@@ -5,11 +5,6 @@
 CROSS-DATASET DIABETES DETECTION: A COMPREHENSIVE MACHINE LEARNING PROJECT
 =================================================================================
 
-Project: Cross-Dataset Diabetes Detection using Machine Learning
-Author: [Your Name]
-Date: August 30, 2025
-Course: [Your Course Name]
-
 OVERVIEW:
 ---------
 This project demonstrates advanced machine learning techniques for diabetes detection
